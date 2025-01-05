@@ -49,6 +49,7 @@ Durante o desenvolvimento deste projeto, foram abordados conceitos importantes, 
 ## Referências
 
 - [Manual do Dev no YouTube](https://www.youtube.com/@manualdodev)
+- [Repositório oficial do Manual do Dev no GitHub](https://github.com/manualdodev/pokedex)
 - [PokéAPI](https://pokeapi.co/): API utilizada para obter informações sobre Pokémons.
 
 ## Screenshots
