@@ -40,10 +40,20 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.style.display = "block"
     pokemonName.innerHTML = data.name
     pokemonNumber.innerHTML = data.id
-    pokemonImage.src =
+    /* pokemonImage.src =
       data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
         "front_default"
       ]
+    } */
+    // Tenta usar a imagem animada
+    const animatedSprite =
+      data.sprites.versions["generation-v"]["black-white"]["animated"]["front_default"]
+
+    // Verifica se a imagem animada existe, caso contrário, usa a imagem oficial
+    pokemonImage.src = animatedSprite
+      ? animatedSprite
+      : data.sprites.other["official-artwork"]["front_default"]
+
     input.value = ""
     searchPokemon = data.id
   } else {
